@@ -26,7 +26,7 @@ function App() {
     
     if(currentQuestion === 0) {
       
-      const response = await axios.get(`http://localhost:5000/api/sayhi/${currentText}`)
+      const response = await axios.get(`https://ai-tutor-backend-service.onrender.com/api/sayhi/${currentText}`)
       setCohereResponse(response.data)
       setLoading(false)
       setCurrentQuestion((currentQuestion) => currentQuestion + 1)
@@ -34,8 +34,8 @@ function App() {
     }
 
     else {
-      const response = await axios.get(`http://localhost:5000/api/data/${currentText + "_" + userGrade}`)
-      const classified = await axios.get(`http://localhost:5000/api/classify/${currentText}`)
+      const response = await axios.get(`https://ai-tutor-backend-service.onrender.com/api/data/${currentText + "_" + userGrade}`)
+      const classified = await axios.get(`https://ai-tutor-backend-service.onrender.com/api/classify/${currentText}`)
       console.log(classified.data)
       if (classified.data === 0) {
         setCohereResponse("Sorry, as a tutor, I can only help you with academics related questions. Please try to stay on topic")

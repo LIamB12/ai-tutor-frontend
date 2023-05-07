@@ -128,3 +128,16 @@ button:hover {
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .buttons button {
+    font-size: 12px;
+    padding:10px
+  }
+  h1 {
+    font-size: 20px;
+  }
+  input {
+    width: 75vw
+  }
+}
