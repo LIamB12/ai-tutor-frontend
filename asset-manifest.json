@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ai-tutor-frontend/static/css/main.0ddb608b.css",
+    "main.js": "/ai-tutor-frontend/static/js/main.f5ec5d09.js",
+    "index.html": "/ai-tutor-frontend/index.html",
+    "main.0ddb608b.css.map": "/ai-tutor-frontend/static/css/main.0ddb608b.css.map",
+    "main.f5ec5d09.js.map": "/ai-tutor-frontend/static/js/main.f5ec5d09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ddb608b.css",
+    "static/js/main.f5ec5d09.js"
+  ]
+}
