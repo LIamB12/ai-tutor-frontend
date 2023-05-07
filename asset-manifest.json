@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ai-tutor-frontend/static/css/main.49691200.css",
-    "main.js": "/ai-tutor-frontend/static/js/main.29ac589d.js",
+    "main.js": "/ai-tutor-frontend/static/js/main.61aa4b6b.js",
     "index.html": "/ai-tutor-frontend/index.html",
     "main.49691200.css.map": "/ai-tutor-frontend/static/css/main.49691200.css.map",
-    "main.29ac589d.js.map": "/ai-tutor-frontend/static/js/main.29ac589d.js.map"
+    "main.61aa4b6b.js.map": "/ai-tutor-frontend/static/js/main.61aa4b6b.js.map"
   },
   "entrypoints": [
     "static/css/main.49691200.css",
-    "static/js/main.29ac589d.js"
+    "static/js/main.61aa4b6b.js"
   ]
 }
