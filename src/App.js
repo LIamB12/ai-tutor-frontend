@@ -70,7 +70,7 @@ function App() {
     <>
       <div className="bg">
       <div className='title'>
-        <h1>My Tutor AI</h1>
+        <h1>My AI Tutor</h1>
       </div>
 
       {!loading ? 
