@@ -3,6 +3,8 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import Typing from 'react-typing-animation';
 
+import { DotLoader, HashLoader } from 'react-spinners';
+
 
 
 function App() {
@@ -114,7 +116,7 @@ function App() {
       </div>
       
       : <div className='App'>
-          <h1>Loading...</h1>
+          <HashLoader color="#000" loading={true}/>
         </div>}
     </div>
   </>

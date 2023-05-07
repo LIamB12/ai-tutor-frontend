@@ -71,16 +71,18 @@ button {
   border-radius: 20px;
   cursor: pointer;
   font-family: 'Roboto', serif;
+  transition: 0.5s;
+}
 
-
-
+button:hover {
+  background-color: #0494dc7f;
 }
 
 .buttons button {
   font-size: 20px;
   padding: 20px;
   border-radius: 30px;
-  box-shadow: 3px 3px 3px rgb(60, 60, 60);
+  box-shadow: 3px 3px 3px rgb(98, 98, 98);
   border: solid 1px black;
   opacity: 90%;
 }

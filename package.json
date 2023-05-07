@@ -16,6 +16,8 @@
     "react-dom": "^18.2.0",
     "react-particle-backgrounds": "^1.0.4",
     "react-scripts": "5.0.1",
+    "react-spinner": "^0.2.7",
+    "react-spinners": "^0.13.8",
     "react-typing-animation": "^1.6.2",
     "web-vitals": "^2.1.4"
   },
