@@ -15,7 +15,7 @@ function App() {
   const[userGrade, setUserGrade] = useState()
   const[loading, setLoading] = useState(false)
 
-  const questions = ["What's your name? ", "Ask Question: "]
+  const questions = ["What's your name? ", "Ask Me A Question: "]
 
   const handleSubmit = async() => {
     
@@ -33,7 +33,14 @@ function App() {
 
     else {
       const response = await axios.get(`http://localhost:5000/api/data/${currentText + "_" + userGrade}`)
-      setCohereResponse(response.data)
+      const classified = await axios.get(`http://localhost:5000/api/classify/${currentText}`)
+      console.log(classified.data)
+      if (classified.data === 0) {
+        setCohereResponse("Sorry, as a tutor, I can only help you with academics related questions. Please try to stay on topic")
+      }
+      else {
+        setCohereResponse(response.data)
+      }
       setLoading(false)
     }
 
@@ -61,7 +68,7 @@ function App() {
     <>
       <div className="bg">
       <div className='title'>
-        <h1>My Tutor</h1>
+        <h1>My Tutor AI</h1>
       </div>
 
       {!loading ? 
@@ -70,10 +77,10 @@ function App() {
         {chosenGrade ? 
         <>
         <h1>{questions[currentQuestion]}</h1>
+        <form onSubmit={handleSubmit} >
         <input onChange={e => handleTextChange(e)} type="text" id="checkbox1" />
-        <div className="submit-div">
-          <button type="submit" onClick={handleSubmit}>Submit</button>
-        </div>
+        </form>
+        
         </>
         : null}
         

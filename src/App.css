@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100;300&display=swap');
 .App {
   text-align: center;
   display: flex ;
@@ -23,7 +24,8 @@ h1 {
 
   color: white ; 
   font-weight: bold;
-
+  font-family: 'Roboto', serif;
+  font-weight: 300;
 
 }
 
@@ -67,10 +69,20 @@ button {
   background-color: white;
   padding: 10px;
   border-radius: 20px;
-  cursor: pointer
+  cursor: pointer;
+  font-family: 'Roboto', serif;
 
 
 
+}
+
+.buttons button {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px rgb(60, 60, 60);
+  border: solid 1px black;
+  opacity: 90%;
 }
 
 
@@ -80,9 +92,14 @@ button {
 
   margin-top: 20px;
   margin-bottom: 20px;
-  opacity: 50%;
 
 
+}
+
+.submit-div button {
+  font-size: 15px;
+  padding: 10;
+  
 }
 
 .buttons {
